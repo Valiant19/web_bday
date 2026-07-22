@@ -1,0 +1,157 @@
+/* background styling*/
+body{
+    background-color: rgb(255, 217, 250);
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* main container box*/
+.window{
+    animation: pop-in 0.5s;
+    width: 380px;
+    background-color: rgb(247, 243, 230);
+    border: 3px solid #000000;
+    border-radius: 5px;
+    box-shadow: 5px 5px 0px; /*x y blur radius*/
+    overflow: hidden;
+    padding: 3px;
+}
+
+@keyframes pop-in {
+    0%{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* header window bar*/
+.window-header{
+    justify-self: center;
+    width: 335px;
+    background-color: #f763d5;
+    border: 3px solid #000000;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 20px;
+}
+.header-buttons{
+    display: flex;
+    gap: 5px;
+}
+.dot{
+    width: 10px;
+    height: 10px;
+    border: 2px solid #000000;
+    border-radius: 2px;
+}
+#pink{
+    background-color: #ffa3ea;
+}#yellow{
+    background-color: #fff97f;
+}#blue{
+    background-color: #4e97ff;
+}
+.header-title{
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+/*container body and typography*/
+.window-body{
+    padding: 30px 20px;
+    text-align: center;
+    color: #2c0c30;
+}
+#img{
+    height: 100px;
+    width: 100px;
+}
+h1{
+    font-size: 28px;
+    font-family: Georgia, serif;
+    font-style: italic;
+    margin: 15px 0;
+    color: rgb(173, 2, 161);
+    /*-webkit-text-stroke: 1px rgb(179, 0, 167);*/
+    animation: slide 1s;
+}
+@keyframes slide {
+    0% {opacity: 0; transform: scale(0);}
+    30%{opacity: 0; transform: scale(1.6);}
+    100% {opacity: 1; transform: scale(1);}
+}
+.dynamic-text{
+    font-size: 15px;
+    color: #f74daa;
+    margin-bottom: 30px;
+}
+.subtitle{
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.message{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 85%;
+    justify-self: center;
+    animation: pop-up 3s;
+}
+@keyframes pop-up{
+    0% {opacity: 0;}
+    60% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.cursor{
+    animation: blink 1s infinite;
+}
+@keyframes blink {
+  50%{opacity: 0;}
+}
+
+button{
+    width: 150px;
+    height: 35px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f763d5;
+    border: 1px;
+    box-shadow:3px 5px 0px #6e4665 ; /*x y blur radius*/
+    animation: pop 3.5s;
+}
+@keyframes pop {
+    0% {opacity: 0;}
+    90%{opacity: 0;}
+    100%{opacity: 1;}
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 450px) {
+  /* Your CSS rules for screens less than 400px wide go here */
+  .window{
+    animation: pop-in 0.5s;
+    width: 80%;
+    box-shadow: 4px 4px 0px; /*x y blur radius*/
+    }
+    .window-header{
+    width: 85%;
+    }
+}

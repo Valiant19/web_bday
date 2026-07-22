@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(255, 217, 250);
+  font-family: "Courier New", Courier, monospace;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.head-title {
+  justify-self: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+#title-one {
+  padding-top: 10px;
+  justify-self: center;
+  font-size: 10px;
+  color: rgb(173, 2, 161);
+  letter-spacing: 5px;
+}
+#title-two {
+  font-family: "Trebuchet MS", sans-serif;
+  justify-self: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(173, 2, 161);
+  letter-spacing: 7px;
+}
+.window {
+  width: 450px;
+  background-color: rgb(247, 243, 230);
+  border: 3px solid #000000;
+  border-radius: 5px;
+  box-shadow: 5px 5px 0px; /*x y blur radius*/
+  overflow: hidden;
+  padding-top: 4px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-bottom: 0px;
+  justify-self: center;
+  animation: pop 1s;
+}
+@keyframes pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.window-header {
+  justify-self: center;
+  width: 93%;
+  background-color: #f763d5;
+  border: 3px solid #000000;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 10px;
+}
+.header-buttons {
+  display: flex;
+  gap: 5px;
+}
+.header-buttons_ {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  gap: 9px;
+  padding-bottom: 20px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border: 2px solid #000000;
+  border-radius: 2px;
+}
+.dot_ {
+  opacity: 0.75;
+  width: 7px;
+  height: 7px;
+  border-radius: 5px;
+}
+#pink {
+  background-color: #ffa3ea;
+}
+#yellow {
+  background-color: #fff97f;
+}
+#blue {
+  background-color: #4e97ff;
+}
+#violet {
+  background-color: #d95ffa;
+}
+#red {
+  background-color: #f73c5e;
+}
+#golden {
+  background-color: rgb(252, 194, 86);
+}
+.header-title {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+.window-body {
+  padding-top: 20px;
+}
+.img {
+  justify-self: center;
+}
+img {
+  width: 340px;
+  height: 340px;
+  border: 2px solid #000000;
+}
+.subtitle {
+  justify-self: center;
+  align-items: center;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+#subtext {
+  width: 350px;
+  background-color: rgb(246, 233, 198);
+  padding: 10px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  border-top: 2px solid black;
+}
+.foot {
+  padding-top: 20px;
+  justify-self: center;
+}
+button {
+  width: 200px;
+  height: 40px;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Courier New", Courier, monospace;
+  background-color: #f763d5;
+  border: 1px;
+  box-shadow: 3px 5px 0px #7c466f; /*x y blur radius*/
+  animation: click 0.22s;
+}
+@keyframes click {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+p {
+  font-size: 12px;
+  letter-spacing: 5px;
+  justify-self: center;
+}
+#text {
+  padding-left: 20px;
+  font-weight: 900;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding-right: 20px;
+}
+#salutation {
+  color: #8e046e;
+  padding-left: 20px;
+  justify-self: left;
+  padding-bottom: 25px;
+}
+#up-text {
+  padding-left: 20px;
+  justify-self: left;
+  font-size: 9px;
+  padding-bottom: 5px;
+}
+.credits {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+#up {
+  color: #8e046e;
+  font-family: Georgia, serif;
+}
+#down {
+  color: #fa59a4;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  letter-spacing: 5px;
+}
+
+@media screen and (max-width: 450px) {
+  /* Your CSS rules for screens less than 400px wide go here */
+  .window {
+    width: 90%;
+  }
+}
+
+.space {
+  height: 50px;
+}
