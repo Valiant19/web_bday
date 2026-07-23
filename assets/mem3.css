@@ -91,6 +91,7 @@ body{
     justify-self: center;
     background-image: url("pic1.jpeg");
     background-repeat: no-repeat;
+    background-size: 100%;
     background-position: center;
 }
 .subtitle{
